@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background: #000;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    color: #000;
+    text-decoration: none;
+    font-size: 38px;
+    font-weight: bold;
+    padding-top: 15px;
+    z-index: 1;
+    cursor: pointer;
+}
+.logo:hover{
+    color: #ff1616;
+}
+.navlinks{
+    background: #fff;
+    margin-right: 300px;
+}
+.navlinks ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 20px 30px;
+}
+.navlinks ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 24px;
+}
+.navlinks ul li a:hover{
+    color: #ff1616;
+}
+.side-bar{
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left: 0;
+}
+.row{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    position: relative;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    flex-basis: 40%;
+}
+.left img{
+    width: 70%;
+    filter: grayscale(1);
+    transition: 1s;
+    /* box-shadow: 0 0 9px 20px rgba(0, 0, 0, 0.1); */
+    cursor: pointer;
+}
+.left img:hover{
+    filter: grayscale(0);
+    box-shadow: 0 0 1px 20px rgba(0, 0, 0, 0.1);
+}
+.mid{
+    flex-basis: 40%;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    padding-top: 100px;
+}
+.mid h1:hover{
+    color: #ff1616;
+    cursor: pointer;
+}
+.btn{
+    display: block;
+    background: #fff;
+    width: 120px;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.btn:hover{
+    background: #ff1616;
+}
+.right{
+    flex-basis: 20%;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    padding: 18px;
+    margin-bottom: 20px;
+    background: #fff;
+    margin-left: 200px;
+}
+.icon img{
+    width: 70px;
+    filter: grayscale(1);
+    transition: 1s;
+    cursor: pointer;
+}
+.icon img:hover{
+    filter: grayscale(0);
+}
